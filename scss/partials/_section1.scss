@@ -1,0 +1,118 @@
+section {
+    width: 99vw;
+    background: #e9e9e9;
+}
+
+.editable {
+    background-color: white;
+    border: 1px solid black;
+}
+
+.add-items {
+    .text-label {
+        font-size: 14px;
+        font-weight: bold;
+        color: red;
+        text-align: center;
+        margin: 0 calc(50% - 140px);
+    }
+    label {
+        margin: 0 calc(50% - 55px);
+        text-align: center;
+        @media(min-width: 450px) {
+            margin: 0 calc(50% - 90px);
+        }
+        input,
+        textarea {
+            margin: 5px calc(50% - 150px);
+            width: 300px;
+            height: 30px;
+            @media(min-width: 450px) {
+                margin: 5px calc(50% - 190px);
+            }
+        }
+        textarea {
+            height: 70px;
+        }
+    }
+    .send-btn {
+        width: 225px;
+        height: 40px;
+        background: #ffed00;
+        margin: 30px calc(50% - 120px);
+        border: none;
+        font-weight: bold;
+        font-size: 16px;
+        color: black;
+        @media(min-width: 450px) {
+            margin: 30px calc(50% - 160px);
+        }
+    }
+    .send-btn:hover {
+        transform: scale(1.2, 1.2);
+        transition: 500ms;
+    }
+}
+
+.data-table {
+    border-spacing: 0;
+    border-radius: 5px;
+    thead {
+        tr {
+            height: 50px;
+            font-size: 20px;
+            color: white;
+            background: black;
+            border-radius: 20px;
+        }
+    }
+    tr {
+        border-bottom: 1px dashed black;
+        td {
+            text-align: center;
+            //            border: 1px dashed black;
+        }
+    }
+    tbody {
+        tr {
+            td {
+                border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+            }
+        }
+    }
+}
+
+.remove-btn {
+    margin-top: 4px;
+    width: 90px;
+    height: 25px;
+    border: none;
+    background: #f80000;
+    color: white;
+    font-weight: bold;
+    box-shadow: inset 0px 0px 19px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 1px;
+}
+
+.edit-btn {
+    margin-top: 3px;
+    width: 90px;
+    height: 25px;
+    border: none;
+    background: #6eb43a;
+    color: white;
+    font-weight: bold;
+    box-shadow: inset 0px 0px 19px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 1px;
+}
+
+.remove-btn:hover {
+    cursor: pointer;
+    box-shadow: none;
+    background: #ff0f0f;
+}
+
+.edit-btn:hover {
+    cursor: pointer;
+    background: #44f62f;
+}

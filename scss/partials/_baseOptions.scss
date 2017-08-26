@@ -1,0 +1,47 @@
+@font-face {
+    //font-family: "ebrima";
+    src: url('../fonts/ebrima.ttf');
+    src: local('ebrima'), local('ebrima'), url('../fonts/ebrima.ttf') format('truetype');
+}
+
+* {
+    font-family: "Ebrima";
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    //font-size: 14px;
+}
+
+
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    //width: 1170px;
+    //border: 1px solid blue;
+}
+
+.row {
+    &::after,
+    &::before {
+        display: table;
+        content: '';
+        clear: both;
+    }
+}
+
+@for $i from 1 through $columnsCount {
+    .col-#{$i} {
+        width: (100%/$columnsCount)*$i;
+    }
+}
+
+[class*='col-'] {
+    float: left;
+    min-height: 1px;
+//    border: 1px solid red;
+    padding: 10px;
+    //    @media (min-width: 400px) {
+    //        display: none;
+    //    }
+}

@@ -1,0 +1,201 @@
+@font-face {
+  src: url("../fonts/ebrima.ttf");
+  src: local("ebrima"), local("ebrima"), url("../fonts/ebrima.ttf") format("truetype"); }
+
+/* line 5, scss/main.css */
+* {
+  font-family: "Ebrima";
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+/* line 11, scss/main.css */
+.container {
+  max-width: 1170px;
+  margin: 0 auto; }
+
+/* line 15, scss/main.css */
+.row::after, .row::before {
+  display: table;
+  content: '';
+  clear: both; }
+
+/* line 20, scss/main.css */
+.col-1 {
+  width: 8.33333%; }
+
+/* line 23, scss/main.css */
+.col-2 {
+  width: 16.66667%; }
+
+/* line 26, scss/main.css */
+.col-3 {
+  width: 25%; }
+
+/* line 29, scss/main.css */
+.col-4 {
+  width: 33.33333%; }
+
+/* line 32, scss/main.css */
+.col-5 {
+  width: 41.66667%; }
+
+/* line 35, scss/main.css */
+.col-6 {
+  width: 50%; }
+
+/* line 38, scss/main.css */
+.col-7 {
+  width: 58.33333%; }
+
+/* line 41, scss/main.css */
+.col-8 {
+  width: 66.66667%; }
+
+/* line 44, scss/main.css */
+.col-9 {
+  width: 75%; }
+
+/* line 47, scss/main.css */
+.col-10 {
+  width: 83.33333%; }
+
+/* line 50, scss/main.css */
+.col-11 {
+  width: 91.66667%; }
+
+/* line 53, scss/main.css */
+.col-12 {
+  width: 100%; }
+
+/* line 56, scss/main.css */
+[class*='col-'] {
+  float: left;
+  min-height: 1px;
+  padding: 10px; }
+
+/* line 61, scss/main.css */
+section {
+  width: 99vw;
+  background: #e9e9e9; }
+
+/* line 65, scss/main.css */
+.editable {
+  background-color: white;
+  border: 1px solid black; }
+
+/* line 69, scss/main.css */
+.add-items .text-label {
+  font-size: 14px;
+  font-weight: bold;
+  color: red;
+  text-align: center;
+  margin: 0 calc(50% - 140px); }
+
+/* line 76, scss/main.css */
+.add-items label {
+  margin: 0 calc(50% - 55px);
+  text-align: center; }
+
+@media (min-width: 450px) {
+  /* line 80, scss/main.css */
+  .add-items label {
+    margin: 0 calc(50% - 90px); } }
+
+/* line 82, scss/main.css */
+.add-items label input,
+.add-items label textarea {
+  margin: 5px calc(50% - 150px);
+  width: 300px;
+  height: 30px; }
+
+@media (min-width: 450px) {
+  /* line 88, scss/main.css */
+  .add-items label input,
+  .add-items label textarea {
+    margin: 5px calc(50% - 190px); } }
+
+/* line 91, scss/main.css */
+.add-items label textarea {
+  height: 70px; }
+
+/* line 94, scss/main.css */
+.add-items .send-btn {
+  width: 225px;
+  height: 40px;
+  background: #ffed00;
+  margin: 30px calc(50% - 120px);
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  color: black; }
+
+@media (min-width: 450px) {
+  /* line 104, scss/main.css */
+  .add-items .send-btn {
+    margin: 30px calc(50% - 160px); } }
+
+/* line 107, scss/main.css */
+.add-items .send-btn:hover {
+  transform: scale(1.2, 1.2);
+  transition: 500ms; }
+
+/* line 111, scss/main.css */
+.data-table {
+  border-spacing: 0;
+  border-radius: 5px; }
+
+/* line 114, scss/main.css */
+.data-table thead tr {
+  height: 50px;
+  font-size: 20px;
+  color: white;
+  background: black;
+  border-radius: 20px; }
+
+/* line 120, scss/main.css */
+.data-table tr {
+  border-bottom: 1px dashed black; }
+
+/* line 122, scss/main.css */
+.data-table tr td {
+  text-align: center; }
+
+/* line 124, scss/main.css */
+.data-table tbody tr td {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5); }
+
+/* line 127, scss/main.css */
+.remove-btn {
+  margin-top: 4px;
+  width: 90px;
+  height: 25px;
+  border: none;
+  background: #f80000;
+  color: white;
+  font-weight: bold;
+  box-shadow: inset 0px 0px 19px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 1px; }
+
+/* line 138, scss/main.css */
+.edit-btn {
+  margin-top: 3px;
+  width: 90px;
+  height: 25px;
+  border: none;
+  background: #6eb43a;
+  color: white;
+  font-weight: bold;
+  box-shadow: inset 0px 0px 19px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 1px; }
+
+/* line 149, scss/main.css */
+.remove-btn:hover {
+  cursor: pointer;
+  box-shadow: none;
+  background: #ff0f0f; }
+
+/* line 154, scss/main.css */
+.edit-btn:hover {
+  cursor: pointer;
+  background: #44f62f; }
